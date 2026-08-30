@@ -1,0 +1,8 @@
+{
+  "name": "org-loinc",
+  "private": true,
+  "description": "LOINC code format, Mod-10 check digit, six-axis part model, and release-CSV parser in portable .cljc (no LOINC content shipped)",
+  "scripts": {
+    "test:cljs": "nbb --classpath \"$(clojure -A:cljs -Spath)\" scripts/verify-cljs.cljs"
+  }
+}
