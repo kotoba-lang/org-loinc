@@ -22,7 +22,7 @@
   look up, any actual axis values for any actual LOINC code — a licensee
   supplies those from their own copy of the release file (see
   `loinc.release-csv`)."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 (def axes
   "The six axis keys, in the canonical Fully-Specified-Name order."
