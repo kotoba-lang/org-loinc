@@ -11,7 +11,7 @@
   by number and their commonly-published one/two-word component name,
   as *examples* — never as part of an enumerated table:
   `2951-2` (Sodium) and `718-7` (Hemoglobin)."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [loinc.check-digit :as cd]))
 
 (defn parse

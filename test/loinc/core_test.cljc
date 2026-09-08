@@ -15,7 +15,7 @@
   repository's licensing boundary, none of it is drawn from or
   resembles an extract of the actual LOINC table."
   (:require [clojure.test :refer [deftest testing is]]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [loinc.check-digit :as cd]
             [loinc.code :as code]
             [loinc.parts :as parts]

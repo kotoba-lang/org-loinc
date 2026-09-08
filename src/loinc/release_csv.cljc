@@ -20,11 +20,11 @@
   Input is a plain string (the CSV file's own text, already read by the
   caller) — this namespace does no file/network IO of its own, per the
   library-wide no-IO rule."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 ;; --- RFC 4180 field-level parsing ----------------------------------------
 ;;
-;; A hand-rolled state machine rather than `clojure.string/split`, because
+;; A hand-rolled state machine rather than `str/split`, because
 ;; `split` on `,` breaks the moment any field is quoted and contains a
 ;; literal comma or embedded newline — both of which are legal, and both
 ;; of which appear in real LOINC release files (LONG_COMMON_NAME and
