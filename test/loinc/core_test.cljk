@@ -14,7 +14,7 @@
   ;; constructed, not a published spec vector -- and, per this
   repository's licensing boundary, none of it is drawn from or
   resembles an extract of the actual LOINC table."
-  (:require [clojure.test :refer [deftest testing is]]
+  (:require [kotoba.test :refer [deftest testing is]]
             [kotoba.lang.text :as str]
             [loinc.check-digit :as cd]
             [loinc.code :as code]
